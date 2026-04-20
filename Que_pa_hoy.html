@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuePaHoy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="Que_pa_hoy.css"/>
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero-extracted">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner hero-inner-box">
+      <h1 class="hero-title">QuePaHoy</h1>
+      <p class="hero-desc">Plataforma web mobile-first para el descubrimiento de eventos locales, donde instituciones, universidades, alcaldías y empresas publican sus eventos, y los asistentes los encuentran en segundos desde cualquier dispositivo.</p>
+      <div class="btn-group hero-buttons">
+        <a href="#backlog" class="btn btn-primary btn-primary-ext">Ver Product Backlog</a>
+        <a href="#roadmap" class="btn btn-outline btn-outline-ext">Explorar Roadmap</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEMA / SOLUCIÓN ===================== -->
+  <section id="problema" class="section">
+    <div class="container">
+      <div class="section-header">
+    
+        <h2>El Problema y la Solución</h2>
+      </div>
+      <div class="grid-2">
+        <div class="prob-card">
+          <h3>Problemas Actuales</h3>
+          <ul>
+            <li>Los organizadores difunden sus eventos de forma fragmentada en múltiples redes sociales sin un punto centralizado</li>
+            <li> asistentes no tienen una fuente unificada para descubrir qué ocurre en su ciudad</li>
+            <li>No existe forma de filtrar eventos por fecha, tipo, precio o modalidad de manera local</li>
+            <li>Los organizadores carecen de métricas de alcance real sobre su audiencia</li>
+            <li>El modelo de comisión por entrada no es viable si las transacciones ocurren fuera de la plataforma</li>
+          </ul>
+        </div>
+        <div class="prob-card">
+          <h3>Lo que QuepaHoy Ofrece</h3>
+          <ul>
+            
+            <li> Cartelera digital centralizada tipo grid, ordenada por proximidad de fecha</li>
+            <li> Publicación de eventos en menos de 5 minutos con formulario intuitivo</li>
+            <li> Filtros por categoría, rango de fechas, precio y modalidad (presencial/virtual)</li>
+            <li> Redirección directa al canal de inscripción externo del organizador (URL, WhatsApp o formulario)</li>
+            <li> Búsqueda por texto libre sobre título y descripción del evento</li>
+            <li> Diseño mobile-first accesible desde cualquier dispositivo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STAKEHOLDERS ===================== -->
+  <section id="stakeholders" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Stakeholders del Proyecto</h2>
+        <p>El éxito de QuePaHoy depende de identificar y atender las necesidades de todos los actores involucrados. Cada stakeholder tiene intereses específicos que guían las decisiones del producto.</p>
+      </div>
+      <div class="grid-4">
+        <div class="stake-card">
+          <div class="stake-icon">
+            <img src="./assets/image.png" alt="Descripción de la imagen">
+          </div>
+          <h3>Asistentes / Usuarios finales</h3>
+          <p>Son el segmento más amplio. Su necesidad principal es descubrir qué eventos ocurren en su ciudad de forma rápida, con filtros relevantes (fecha, tipo, precio).</p>
+        </div>
+        <div class="stake-card">
+          <div class="stake-icon">
+            <img src="./assets/iamge_2.png" alt="Descripción de la imagen">
+          </div>
+          <h3>Organizadores de eventos</h3>
+          <p>Su necesidad es publicar eventos con facilidad, con un formulario intuitivo que soporte imagen (flyer), descripción, categoría, fecha/hora, ubicación y enlace de inscripción externo. </p>
+        </div>
+        <div class="stake-card">
+          <div class="stake-icon">
+            <img src="./assets/administrador.png" alt="Descripción de la imagen">
+          </div>
+          <h3>Administradores </h3>
+          <p>Gestionan la plataforma y supervisan el contenido. Tienen la capacidad de listar usuarios, organizadores y eventos, así como desactivar contenido que incumpla las políticas o sea considerado problemático.</p>
+        </div>
+        <div class="stake-card">
+          <div class="stake-icon">
+            <img src="./assets/patrocinadores.png" alt="Descripción de la imagen">
+          </div>
+          <h3>Patrocinadores y anunciantes</h3>
+           <p>Empresas locales podrían pagar por visibilidad destacada de sus eventos o por banners contextuales. Su incorporación depende de que la plataforma demuestre audiencia suficiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROLES SCRUM ===================== -->
+  <section id="roles" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Roles Scrum del Equipo</h2>
+        <p>QuePaHoy se desarrolla bajo el marco Scrum con roles bien definidos que garantizan la entrega de valor continuo y la eliminación de impedimentos.</p>
+      </div>
+      <div class="grid-3">
+        <div class="role-card">
+          <h3>Product Owner</h3>
+          <p>Responsable del valor del producto. Representa los intereses del negocio y los usuarios ante el equipo de desarrollo.</p>
+          <ul>
+            <li>Gestiona y prioriza el Product Backlog</li>
+            <li>Define y valida historias de usuario</li>
+            <li>Aprueba los incrementos de cada Sprint</li>
+          </ul>
+          <div  <strong>Ejemplo:</strong> Director de la biblioteca</div>
+        </div>
+        <div class="role-card">
+          <h3>Scrum Master</h3>
+          <p>Facilitador del proceso ágil. Protege al equipo y asegura que Scrum se aplique correctamente en cada ceremonia y artefacto.</p>
+          <ul>
+            <li>Elimina impedimentos del equipo</li>
+            <li>Guía la adopción de prácticas ágiles</li>
+            <li>Facilita todas las ceremonias Scrum</li>
+          </ul>
+        </div>
+        <div class="role-card">
+          <h3>Development Team</h3>
+          <p>Equipo multidisciplinario autoorganizado de 5 personas responsable de diseñar, desarrollar y entregar incrementos funcionales cada Sprint.</p>
+          <ul>
+            <li>2 Backend developers</li>
+            <li>1 Frontend developers</li>
+            <li>1 QA Tester</li>
+            <li>1 UI/UX Designer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROADMAP ===================== -->
+  <section id="roadmap" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Roadmap del Producto</h2>
+        <p>El desarrollo de QuePaHoy se organiza en 5 fases funcionales progresivas, construyendo capacidades desde la base de autenticación hasta la administracion de la plataforma</p>
+      </div>
+      <div class="roadmap-phase-highlight" aria-label="Fase 1 del roadmap">
+        <div class="roadmap-phase-arrow" aria-hidden="true">
+          <svg viewBox="0 0 79 95" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 78.734375 L39.375 94.484375 L78.75 78.734375 L78.75 0 L39.375 15.75 L0 0 Z" />
+          </svg>
+          <span class="roadmap-phase-num">1</span>
+        </div>
+        <div class="roadmap-phase-copy">
+          <h4>Fase 1</h4>
+          <p>Gestión de usuarios y autenticación</p>
+        </div>
+      </div>
+
+      <!---2-->
+      <div class="roadmap-phase-highlight" aria-label="Fase 1 del roadmap">
+        <div class="roadmap-phase-arrow" aria-hidden="true">
+          <svg viewBox="0 0 79 95" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 78.734375 L39.375 94.484375 L78.75 78.734375 L78.75 0 L39.375 15.75 L0 0 Z" />
+          </svg>
+          <span class="roadmap-phase-num">1</span>
+        </div>
+        <div class="roadmap-phase-copy">
+          <h4>Fase 2</h4>
+          <p>Publicación y gestión de eventos</p>
+        </div>
+      </div>
+
+
+  <!---3-->
+      <div class="roadmap-phase-highlight" aria-label="Fase 1 del roadmap">
+        <div class="roadmap-phase-arrow" aria-hidden="true">
+          <svg viewBox="0 0 79 95" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 78.734375 L39.375 94.484375 L78.75 78.734375 L78.75 0 L39.375 15.75 L0 0 Z" />
+          </svg>
+          <span class="roadmap-phase-num">1</span>
+        </div>
+        <div class="roadmap-phase-copy">
+          <h4>Fase 3</h4>
+          <p>Descubrimiento de eventos</p>
+        </div>
+      </div>
+  
+  <!---4-->
+      <div class="roadmap-phase-highlight" aria-label="Fase 1 del roadmap">
+        <div class="roadmap-phase-arrow" aria-hidden="true">
+          <svg viewBox="0 0 79 95" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 78.734375 L39.375 94.484375 L78.75 78.734375 L78.75 0 L39.375 15.75 L0 0 Z" />
+          </svg>
+          <span class="roadmap-phase-num">1</span>
+        </div>
+        <div class="roadmap-phase-copy">
+          <h4>Fase 4</h4>
+          <p>Perfil del organizador</p>
+        </div>
+      </div>
+
+      <!---5-->
+      <div class="roadmap-phase-highlight" aria-label="Fase 2 del roadmap">
+        <div class="roadmap-phase-arrow" aria-hidden="true">
+          <svg viewBox="0 0 79 95" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 78.734375 L39.375 94.484375 L78.75 78.734375 L78.75 0 L39.375 15.75 L0 0 Z" />
+          </svg>
+          <span class="roadmap-phase-num">1</span>
+        </div>
+        <div class="roadmap-phase-copy">
+          <h4>Fase 5</h4>
+          <p>Administración de la plataforma</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== ARTEFACTOS ===================== -->
+  <section id="artefactos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Artefactos Scrum</h2>
+        <p>Scrum define tres artefactos fundamentales que garantizan la transparencia, inspección y adaptación del proceso de desarrollo a lo largo de todo el proyecto.</p>
+      </div>
+      <div class="flex-col-gap-20">
+        <div class="artifact-card">
+          <div class="artifact-num">1</div>
+          <div>
+            <h3>Product Backlog</h3>
+            <p>Lista ordenada y priorizada de todas las funcionalidades, mejoras y correcciones que el producto necesita. Es un documento vivo, mantenido por el Product Owner.</p>
+          </div>
+        </div>
+        <div class="artifact-card">
+          <div class="artifact-num">2</div>
+          <div>
+            <h3>Sprint Backlog</h3>
+            <p>Subconjunto de ítems del Product Backlog seleccionados para el Sprint actual, junto con el plan detallado de tareas necesarias para completar el Sprint Goal.</p>
+          </div>
+        </div>
+        <div class="artifact-card">
+          <div class="artifact-num">3</div>
+          <div>
+            <h3>Incremento</h3>
+            <p>Resultado tangible y potencialmente entregable de cada Sprint. Cada incremento suma al anterior, construyendo el producto de manera acumulativa y verificable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOD / DOR ===================== -->
+  <section id="dod" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Definition of Ready y Definition of Done</h2>
+      </div>
+      <div class="dod-wrap">
+        <div class="dod-card">
+          <div class="dod-title badge-dor">✅ Definition of Ready (DoR)</div>
+          <p class="muted-text-sm">Una historia de usuario puede ingresar al Sprint únicamente cuando cumple todos estos criterios de calidad previos al desarrollo:</p>
+          <ul>
+            <li><span>✓</span> Está bien definida y comprendida por el equipo</li>
+            <li><span>✓</span> Tiene criterios de aceptación claros y verificables</li>
+            <li><span>✓</span> Ha sido estimada en Story Points</li>
+            <li><span>✓</span> Es lo suficientemente pequeña (≤ 8 story points)</li>
+          </ul>
+        </div>
+        <div class="dod-card">
+          <div class="dod-title badge-dod">🏁 Definition of Done (DoD)</div>
+          <p class="muted-text-sm">Una tarea se considera completada únicamente cuando ha superado todas las etapas de calidad establecidas por el equipo:</p>
+          <ul>
+            <li><span>✓</span> Código implementado y revisado</li>
+            <li><span>✓</span> Pruebas unitarias ejecutadas y aprobadas</li>
+            <li><span>✓</span> Pruebas de integración completadas</li>
+            <li><span>✓</span> Aprobado por el Product Owner</li>
+            <li><span>✓</span> Integrado exitosamente en el sistema principal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRIORIZACIÓN Y ESTIMACIÓN ===================== -->
+  <section id="priorizacion" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Priorización y Estimación</h2>
+        <p>QuePaHoy utiliza técnicas ágiles probadas para maximizar el valor entregado en cada Sprint, equilibrando el impacto para el usuario con el esfuerzo de implementación.</p>
+      </div>
+
+      <div class="prior-grid">
+        <div class="prior-card">
+          <h3>Método MoSCoW</h3>
+          <p class="prior-copy">La priorización también pondera el valor para el usuario frente al esfuerzo de desarrollo, buscando siempre el mayor retorno posible.</p>
+          <div class="moscow-list">
+            <div class="moscow-item m-must">
+              <span class="moscow-tag">Must</span>
+              <p>Obligatorio - el sistema no funciona sin ello</p>
+            </div>
+            <div class="moscow-item m-should">
+              <span class="moscow-tag">Should</span>
+              <p>Importante - alto valor, debe incluirse</p>
+            </div>
+            <div class="moscow-item m-could">
+              <span class="moscow-tag">Could</span>
+              <p>Opcional - deseable si hay capacidad</p>
+            </div>
+            <div class="moscow-item m-wont">
+              <span class="moscow-tag">Won't</span>
+              <p>No se hara en esta iteracion</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="prior-card">
+          <h3>Story Points - Escala Fibonacci</h3>
+          <p class="prior-copy">El equipo estima el esfuerzo relativo de cada historia usando la secuencia de Fibonacci, que refleja la incertidumbre creciente en tareas más complejas.</p>
+          <table class="fibo-table" aria-label="Escala Fibonacci de Story Points">
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>13</td>
+              </tr>
+
+            </tbody>
+          </table>
+          <div class="poker-note">
+            <strong>Método de estimación:</strong> Planning Poker - cada miembro vota simultáneamente para evitar sesgos y fomentar la discusión del equipo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BACKLOG ===================== -->
+  <section id="backlog" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Product Backlog Completo</h2>
+        <p>El backlog de QuePaHoy contiene 22 historias de usuario organizadas en 5 módulos funcionales, con prioridades MoSCoW y estimaciones en Story Points.</p>
+      </div>
+      <div class="tab-bar">
+        <button class="tab-btn active" onclick="showTab('usuarios',this)">Gestión de Usuarios</button>
+        <button class="tab-btn" onclick="showTab('publicacion',this)">Publicación</button>
+        <button class="tab-btn" onclick="showTab('descubrimiento',this)">Descubrimiento</button>
+        <button class="tab-btn" onclick="showTab('perfil',this)">Perfil Organizador</button>
+        <button class="tab-btn" onclick="showTab('administracion',this)">Administración</button>
+      </div>
+
+      <!-- USUARIOS -->
+      <div id="tab-usuarios" class="backlog-panel active">
+        <table>
+          <thead><tr><th>ID</th><th>Historia de Usuario</th><th>Prioridad</th><th>SP</th></tr></thead>
+          <tbody>
+            <tr><td>HU-01</td><td>Registro con correo electrónico</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">3</span></td></tr>
+            <tr><td>HU-02</td><td>Inicio de sesión con Google OAuth</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-03</td><td>Solicitud de rol Organizador</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-04</td><td>Edición de perfil de usuario</td><td><span class="priority-badge should">Media</span></td><td><span class="sp-badge">2</span></td></tr>
+            <tr><td>HU-05</td><td>Recuperación de contraseña</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">3</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PUBLICACION -->
+      <div id="tab-publicacion" class="backlog-panel">
+        <table>
+          <thead><tr><th>ID</th><th>Historia de Usuario</th><th>Prioridad</th><th>SP</th></tr></thead>
+          <tbody>
+            <tr><td>HU-06</td><td>Creación de un evento</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">8</span></td></tr>
+            <tr><td>HU-07</td><td>Edición de un evento publicado</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">3</span></td></tr>
+            <tr><td>HU-08</td><td>Eliminación de un evento</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">2</span></td></tr>
+            <tr><td>HU-09</td><td>Publicación inmediata sin aprobación</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">1</span></td></tr>
+            <tr><td>HU-10</td><td>Notificación email al publicar</td><td><span class="priority-badge should">Media</span></td><td><span class="sp-badge">3</span></td></tr>
+            <tr><td>HU-11</td><td>Panel de gestión del Organizador</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- DESCUBRIMIENTO -->
+      <div id="tab-descubrimiento" class="backlog-panel">
+        <table>
+          <thead><tr><th>ID</th><th>Historia de Usuario</th><th>Prioridad</th><th>SP</th></tr></thead>
+          <tbody>
+            <tr><td>HU-12</td><td>Grid de tarjetas en vista principal</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-13</td><td>Filtrado de eventos</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-14</td><td>Búsqueda por texto libre</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-15</td><td>Página de detalle del evento</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-16</td><td>Guardar evento en favoritos</td><td><span class="priority-badge should">Media</span></td><td><span class="sp-badge">3</span></td></tr>
+            <tr><td>HU-17</td><td>Vista previa Open Graph</td><td><span class="priority-badge should">Media</span></td><td><span class="sp-badge">3</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PERFIL ORGANIZADOR -->
+      <div id="tab-perfil" class="backlog-panel">
+        <table>
+          <thead><tr><th>ID</th><th>Historia de Usuario</th><th>Prioridad</th><th>SP</th></tr></thead>
+          <tbody>
+            <tr><td>HU-18</td><td>Perfil público del Organizador</td><td><span class="priority-badge should">Media</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-19</td><td>Registro de visualizaciones</td><td><span class="priority-badge should">Media</span></td><td><span class="sp-badge">5</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ADMINISTRACION -->
+      <div id="tab-administracion" class="backlog-panel">
+        <table>
+          <thead><tr><th>ID</th><th>Historia de Usuario</th><th>Prioridad</th><th>SP</th></tr></thead>
+          <tbody>
+            <tr><td>HU-20</td><td>Panel de administración general</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">8</span></td></tr>
+            <tr><td>HU-21</td><td>Aprobación de solicitudes de rol</td><td><span class="priority-badge must">Alta</span></td><td><span class="sp-badge">5</span></td></tr>
+            <tr><td>HU-22</td><td>Log de acciones administrativas</td><td><span class="priority-badge should">Media</span></td><td><span class="sp-badge">5</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== ESTADÍSTICAS ===================== -->
+  <section id="stats" class="section-sm">
+    <div class="container">
+      <h2>Duración y Estructura del Proyecto</h2>
+      <p>El proyecto tiene una duración total de 2 meses, dividido en 5 Sprints de 2 semanas cada uno. Esta cadencia permite iteraciones frecuentes con entregas de valor constante y oportunidades regulares de retroalimentación.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Meses de duración total del proyecto</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Sprints planificados de 2 semanas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Semanas por Sprint</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Personas en el equipo multidisciplinario</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CEREMONIAS ===================== -->
+  <section id="ceremonias" class="section">
+    <div class="container">
+      <div class="section-header" class="mb-48">
+        <h2 class="section-header-title">Ceremonias y Eventos Scrum</h2>
+        <p class="section-header-desc">Scrum estructura el trabajo mediante cuatro ceremonias clave que garantizan la comunicación, transparencia y mejora continua del equipo a lo largo de cada Sprint.</p>
+      </div>
+
+      <div class="grid-2" class="ceremony-grid">
+        <!-- Sprint Planning -->
+        <div>
+          <div class="ceremony-item">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+              <rect x="8" y="14" width="4" height="4" rx="1"></rect>
+            </svg>
+          </div>
+          <h3 class="ceremony-item-title">Sprint Planning — 4 hrs</h3>
+          <p class="ceremony-item-desc">Al inicio de cada Sprint, el equipo define el Sprint Goal, selecciona las historias del backlog y desglosa las tareas necesarias para construir el Sprint Backlog.</p>
+        </div>
+
+        <!-- Daily Scrum -->
+        <div>
+          <div class="ceremony-item">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="3" width="16" height="12" rx="2" ry="2"></rect>
+              <path d="M8 21h8"></path>
+              <path d="M12 15v6"></path>
+              <circle cx="12" cy="9" r="2"></circle>
+              <path d="M9 13c0-1.5 1.5-2 3-2s3 .5 3 2"></path>
+            </svg>
+          </div>
+          <h3 class="ceremony-item-title">Daily Scrum — 15 min</h3>
+          <p class="ceremony-item-desc">Reunión diaria de sincronización. Cada miembro responde: ¿Qué hice ayer? ¿Qué haré hoy? ¿Tengo algún impedimento? Mantiene al equipo alineado y enfocado.</p>
+        </div>
+
+        <!-- Sprint Review -->
+        <div>
+          <div class="ceremony-item">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 20h20"></path>
+              <path d="M4 20V8l8-4 8 4v12"></path>
+              <path d="M9 20v-6h6v6"></path>
+              <circle cx="19" cy="10" r="2"></circle>
+              <path d="M21 12l-1 2"></path>
+              <path d="M17 12l1 2"></path>
+            </svg>
+          </div>
+          <h3 class="ceremony-item-title">Sprint Review — 2 hrs</h3>
+          <p class="ceremony-item-desc">Al cierre del Sprint, el equipo presenta el incremento funcional al Product Owner y stakeholders para obtener retroalimentación directa sobre el producto entregado.</p>
+        </div>
+
+        <!-- Sprint Retrospective -->
+        <div>
+          <div class="ceremony-item">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="ceremony-item-title">Sprint Retrospective — 1 hr</h3>
+          <p class="ceremony-item-desc">El equipo reflexiona sobre su proceso: ¿Qué funcionó bien? ¿Qué se puede mejorar? ¿Qué acciones concretas tomamos? Impulsa la mejora continua del equipo.</p>
+        </div>
+      </div>
+
+      <div class="ceremony-example-box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ceremony-example-icon">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <path d="M3 9h18"></path>
+          <path d="M9 21V9"></path>
+        </svg>
+        <p class="ceremony-example-text">
+          <strong class="text-black">Sprint 1 — Ejemplo de Sprint Backlog:</strong> Historias HU01 (Registro con correo electrónico) y HU02 (Inicio de sesión con Google OAuth). Tareas incluyen diseño de base de datos, API de registro, formulario frontend, implementación de login y pruebas de autenticación por QA.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PLANIFICACIÓN SPRINTS ===================== -->
+  <section id="sprints" class="section sprints-extracted">
+    <div class="container">
+      <div class="section-header" class="mb-60">
+        <h2 class="section-header-title">Planificación de los 5 Sprints</h2>
+        <p class="section-header-desc">Cada Sprint tiene un tema y un conjunto definido de historias de usuario. La secuencia está diseñada para construir funcionalidades de mayor dependencia técnica primero.</p>
+      </div>
+      
+      <div class="sprint-timeline" class="sprint-timeline-container">
+        <!-- Lína central vertical -->
+        <div class="sprint-timeline-line"></div>
+        
+        <!-- S1 (Izquierda) -->
+        <div class="sprint-timeline-row">
+          <div class="sprint-timeline-content right">
+            <div class="sprint-timeline-border-right"></div>
+            <h4 class="sprint-timeline-title">Sprint 1</h4>
+            <p class="sprint-timeline-desc">Autenticación — HU01, HU02, HU03, HU04, HU05</p>
+          </div>
+          <div class="sprint-timeline-num">1</div>
+          <div></div>
+        </div>
+
+        <!-- S2 (Derecha) -->
+        <div class="sprint-timeline-row">
+          <div></div>
+          <div class="sprint-timeline-num">2</div>
+          <div class="sprint-timeline-content left">
+            <div class="sprint-timeline-border-left"></div>
+            <h4 class="sprint-timeline-title">Sprint 2</h4>
+            <p class="sprint-timeline-desc">Publicación  — HU06, HU07, HU08, HU09, HU11</p>
+          </div>
+        </div>
+
+        <!-- S3 (Izquierda) -->
+        <div class="sprint-timeline-row">
+          <div class="sprint-timeline-content right">
+            <div class="sprint-timeline-border-right"></div>
+            <h4 class="sprint-timeline-title">Sprint 3</h4>
+            <p class="sprint-timeline-desc">Descubrimiento — HU012, HU013, HU014, HU015</p>
+          </div>
+          <div class="sprint-timeline-num">3</div>
+          <div></div>
+        </div>
+
+        <!-- S4 (Derecha) -->
+        <div class="sprint-timeline-row">
+          <div></div>
+          <div class="sprint-timeline-num">4</div>
+          <div class="sprint-timeline-content left">
+            <div class="sprint-timeline-border-left"></div>
+            <h4 class="sprint-timeline-title">Sprint 4</h4>
+            <p class="sprint-timeline-desc">Perfil Organizador — HU10, HU16, HU17, HU18, HU19</p>
+          </div>
+        </div>
+
+        <!-- S5 (Izquierda) -->
+        <div class="sprint-timeline-row">
+          <div class="sprint-timeline-content right">
+            <div class="sprint-timeline-border-right"></div>
+            <h4 class="sprint-timeline-title">Sprint 5</h4>
+            <p class="sprint-timeline-desc">Administración — HU20, HU21, HU22</p>
+          </div>
+          <div class="sprint-timeline-num">5</div>
+          <div></div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ===================== MÉTRICAS ===================== -->
+  <section id="metricas" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Métricas Scrum: Velocity y Burndown</h2>
+        <p>El equipo monitorea su desempeño a través de métricas clave que permiten predecir la capacidad futura y asegurar que el trabajo avanza al ritmo esperado.</p>
+      </div>
+
+      <div class="board-arch-grid">
+        
+        <!-- Velocity -->
+        <div class="flex-col-gap-20">
+          <h3 class="metrics-title">Velocity por Sprint</h3>
+          
+          <div class="metrics-chart-container">
+            <svg viewBox="-20 0 460 300" class="metrics-chart-svg">
+              <!-- Grid lines -->
+              <line x1="0" y1="50" x2="400" y2="50" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="150" x2="400" y2="150" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="250" x2="400" y2="250" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <!-- Y Axis labels -->
+              <text x="410" y="54" fill="var(--muted)" font-size="10" font-family="Arial">13</text>
+              <text x="410" y="104" fill="var(--muted)" font-size="10" font-family="Arial">8</text>
+              <text x="410" y="154" fill="var(--muted)" font-size="10" font-family="Arial">5</text>
+              <text x="410" y="204" fill="var(--muted)" font-size="10" font-family="Arial">3</text>
+              <text x="410" y="254" fill="var(--muted)" font-size="10" font-family="Arial">0</text>
+              <!-- Top right label -->
+              <text x="410" y="30" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="end">Story Points</text>
+              
+              <!-- Bars -->
+              <rect x="25" y="130" width="50" height="120" fill="var(--accent2)" rx="2" />
+              <rect x="95" y="110" width="50" height="140" fill="var(--accent)" rx="2" opacity="0.9" />
+              <rect x="165" y="90" width="50" height="160" fill="var(--accent)" rx="2" opacity="0.75" />
+              <rect x="235" y="70" width="50" height="180" fill="var(--accent)" rx="2" opacity="0.6" />
+              <rect x="305" y="60" width="50" height="190" fill="var(--accent)" rx="2" opacity="0.45" />
+              
+              <!-- X Axis labels -->
+              <text x="50" y="270" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Sprint 1</text>
+              <text x="120" y="270" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Sprint 2</text>
+              <text x="190" y="270" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Sprint 3</text>
+              <text x="260" y="270" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Sprint 4</text>
+              <text x="330" y="270" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Sprint 5</text>
+            </svg>
+          </div>
+
+        </div>
+
+        <!-- Burndown -->
+        <div class="flex-col-gap-20">
+          <h3 class="metrics-title">Burndown Chart — Sprint Ejemplo</h3>
+          
+          <div class="metrics-chart-container">
+            <svg viewBox="-60 0 500 300" class="metrics-chart-svg">
+              <!-- Grid lines -->
+              <line x1="0" y1="50" x2="400" y2="50" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="150" x2="400" y2="150" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="0" y1="250" x2="40" y2="250" stroke="var(--muted)" stroke-width="1" />
+              <line x1="40" y1="250" x2="400" y2="250" stroke="rgba(0,0,0,0.3)" stroke-width="1" stroke-dasharray="4 4" />
+              
+              <!-- Vertical grid lines -->
+              <line x1="0" y1="50" x2="0" y2="250" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="80" y1="50" x2="80" y2="250" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="160" y1="50" x2="160" y2="250" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="240" y1="50" x2="240" y2="250" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              <line x1="320" y1="50" x2="320" y2="250" stroke="rgba(0,0,0,0.06)" stroke-width="1" stroke-dasharray="4 4" />
+              
+              <!-- Y Axis labels -->
+              <text x="410" y="54" fill="var(--muted)" font-size="10" font-family="Arial">13</text>
+              <text x="410" y="104" fill="var(--muted)" font-size="10" font-family="Arial">8</text>
+              <text x="410" y="154" fill="var(--muted)" font-size="10" font-family="Arial">5</text>
+              <text x="410" y="204" fill="var(--muted)" font-size="10" font-family="Arial">3</text>
+              <text x="410" y="254" fill="var(--muted)" font-size="10" font-family="Arial">0</text>
+              <!-- Top right label -->
+              <text x="410" y="30" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="end">Trabajo Restante (SP)</text>
+
+              <!-- X Axis labels -->
+              <text x="0" y="265" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Día 1</text>
+              <text x="80" y="265" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Día 3</text>
+              <text x="160" y="265" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Día 5</text>
+              <text x="240" y="265" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Día 7</text>
+              <text x="320" y="265" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Día 9</text>
+              <text x="400" y="265" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Día 10</text>
+              
+              <text x="200" y="285" fill="var(--muted)" font-size="10" font-family="Arial" text-anchor="middle">Día</text>
+
+              <!-- Ideal Line -->
+              <polyline points="0,50 400,250" fill="none" stroke="var(--accent2)" stroke-width="1.5" />
+              
+              <!-- Completed tooltip -->
+              <rect x="-42" y="240" width="60" height="16" rx="8" fill="var(--text)" />
+              <text x="-12" y="251" fill="#fff" font-size="9" font-family="Arial" text-anchor="middle">Completado: 0</text>
+              <!-- Info dot at the end -->
+              <circle cx="400" cy="250" r="3" fill="var(--accent2)" />
+            </svg>
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TABLERO Y ARQUITECTURA ===================== -->
+  <section id="tablero" class="section">
+    <div class="container">
+      <div class="section-header" class="mb-50 text-left">
+        <h2 class="section-header-title large">Tablero Scrum y Arquitectura del Sistema</h2>
+      </div>
+
+      <div class="board-arch-grid">
+        
+        <!-- Tablero -->
+        <div>
+          <h3 class="board-arch-title bold">Tablero Scrum</h3>
+          <p class="board-arch-desc">El flujo de trabajo de QuePaHoy se visualiza en un tablero Scrum con columnas que representan el estado de cada tarea en tiempo real.</p>
+          
+          <div class="board-column-list">
+            <!-- Step 1 -->
+            <div class="board-column-item">
+              <svg width="60" height="80" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0 0 H60 V 65 L30 80 L0 65 Z" fill="rgba(0,161,155,0.15)"/>
+                 <text x="30" y="50" fill="var(--text)" font-size="20" font-weight="700" font-family="'DM Sans', sans-serif" text-anchor="middle">1</text>
+              </svg>
+              <h4 class="board-column-name">Product Backlog</h4>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="board-column-item">
+              <svg width="60" height="80" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0 0 L30 15 L60 0 V 65 L30 80 L0 65 Z" fill="rgba(0,161,155,0.15)"/>
+                 <text x="30" y="50" fill="var(--text)" font-size="20" font-weight="700" font-family="'DM Sans', sans-serif" text-anchor="middle">2</text>
+              </svg>
+              <h4 class="board-column-name">To Do</h4>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="board-column-item">
+              <svg width="60" height="80" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0 0 L30 15 L60 0 V 65 L30 80 L0 65 Z" fill="rgba(0,161,155,0.15)"/>
+                 <text x="30" y="50" fill="var(--text)" font-size="20" font-weight="700" font-family="'DM Sans', sans-serif" text-anchor="middle">3</text>
+              </svg>
+              <h4 class="board-column-name">In Progress</h4>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="board-column-item">
+              <svg width="60" height="80" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0 0 L30 15 L60 0 V 65 L30 80 L0 65 Z" fill="rgba(0,161,155,0.15)"/>
+                 <text x="30" y="50" fill="var(--text)" font-size="20" font-weight="700" font-family="'DM Sans', sans-serif" text-anchor="middle">4</text>
+              </svg>
+              <h4 class="board-column-name">Testing</h4>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="board-column-item">
+              <svg width="60" height="80" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M0 0 L30 15 L60 0 V 65 L30 80 L0 65 Z" fill="rgba(0,161,155,0.15)"/>
+                 <text x="30" y="50" fill="var(--text)" font-size="20" font-weight="700" font-family="'DM Sans', sans-serif" text-anchor="middle">5</text>
+              </svg>
+              <h4 class="board-column-name">Done</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arquitectura -->
+        <div>
+          <h3 class="board-arch-title bold">Arquitectura del Sistema</h3>
+          <p class="board-arch-desc">QuePaHoy utiliza una arquitectura en capas que separa responsabilidades y garantiza escalabilidad, mantenibilidad y seguridad en cada nivel.</p>
+          
+          <div class="arch-diagram-container">
+             <svg width="450" height="300" viewBox="0 0 450 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="overflow-visible">
+                <!-- Círculo externo -->
+                <circle cx="230" cy="150" r="95" stroke="rgba(0,161,155,0.4)" stroke-width="1.5" fill="none" />
+                <!-- Círculo medio -->
+                <circle cx="205" cy="150" r="70" stroke="rgba(0,161,155,0.7)" stroke-width="1.5" fill="none" />
+                <!-- Círculo interno -->
+                <circle cx="225" cy="150" r="50" fill="var(--accent)" />
+                
+                <!-- API Backend (Top Right: x=290, y=75 approx) -->
+                <polyline points="295,85 360,85" fill="none" stroke="rgba(0,161,155,0.5)" stroke-width="1.5" />
+                <circle cx="295" cy="85" r="3" fill="var(--bg)" stroke="rgba(0,161,155,0.5)" stroke-width="1.5" />
+                <text x="370" y="82" fill="var(--text)" font-size="11" font-weight="700" font-family="'DM Sans', sans-serif">API Backend</text>
+                <text x="370" y="96" fill="var(--muted)" font-size="9" font-family="'DM Sans', sans-serif">Node.js procesa y valida</text>
+                <text x="370" y="108" fill="var(--muted)" font-size="9" font-family="'DM Sans', sans-serif">solicitudes</text>
+
+                <!-- Aplicación (Left Edge of middle circle: x=135, y=150) -->
+                <polyline points="135,150 80,150" fill="none" stroke="rgba(0,161,155,0.5)" stroke-width="1.5" />
+                <circle cx="135" cy="150" r="3" fill="var(--bg)" stroke="rgba(0,161,155,0.5)" stroke-width="1.5" />
+                <text x="70" y="147" fill="var(--text)" font-size="11" font-weight="700" font-family="'DM Sans', sans-serif" text-anchor="end">Aplicación</text>
+                <text x="70" y="161" fill="var(--muted)" font-size="9" font-family="'DM Sans', sans-serif" text-anchor="end">Interfaz React que gestiona</text>
+                <text x="70" y="173" fill="var(--muted)" font-size="9" font-family="'DM Sans', sans-serif" text-anchor="end">vistas</text>
+
+                <!-- Usuario (Right Edge of inner circle: x=275, y=170 approx) -->
+                <polyline points="275,170 330,170" fill="none" stroke="rgba(0,161,155,0.5)" stroke-width="1.5" />
+                <circle cx="275" cy="170" r="3" fill="var(--bg)" stroke="rgba(0,161,155,0.5)" stroke-width="1.5" />
+                <text x="340" y="167" fill="var(--text)" font-size="11" font-weight="700" font-family="'DM Sans', sans-serif">Usuario</text>
+                <text x="340" y="181" fill="var(--muted)" font-size="9" font-family="'DM Sans', sans-serif">Navegador web que inicia</text>
+                <text x="340" y="193" fill="var(--muted)" font-size="9" font-family="'DM Sans', sans-serif">acciones</text>
+             </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ENTREGA / CONCLUSIÓN ===================== -->
+  <section id="entrega" class="section">
+    <div class="container entrega-container">
+      <div class="mb-48 text-left">
+        <h2 class="section-header-title xlarge">Entrega del Producto y Conclusión</h2>
+        <p class="section-header-desc xlarge">
+          Al finalizar los 5 Sprints, QuePaHoy será entregado como un producto completo, probado y listo para operar en beneficio de organizadores y asistentes de eventos en la ciudad.
+        </p>
+      </div>
+
+      <div class="board-arch-grid">
+        
+        <!-- Left Column: El Producto Final Incluye -->
+        <div>
+          <h3 class="board-arch-title">El Producto Final Incluye</h3>
+          <div class="entrega-list">
+            <!-- 1 -->
+            <div class="entrega-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="ceremony-example-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <div>
+                <h4 class="entrega-item-title">Sistema web funcional</h4>
+                <p class="entrega-item-desc">Plataforma completa con todos los módulos operativos y probados.</p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="entrega-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="ceremony-example-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <div>
+                <h4 class="entrega-item-title">Base de datos configurada</h4>
+                <p class="entrega-item-desc">PostgreSQL optimizado con esquemas, índices y respaldos automáticos configurados.</p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="entrega-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="ceremony-example-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <div>
+                <h4 class="entrega-item-title">Documentación técnica</h4>
+                <p class="entrega-item-desc">Guías de arquitectura, APIs y procedimientos de mantenimiento.</p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="entrega-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="ceremony-example-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <div>
+                <h4 class="entrega-item-title">Manual de usuario</h4>
+                <p class="entrega-item-desc">Guía detallada para administradores, instituciones y organizadores de eventos.</p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="entrega-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="ceremony-example-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <div>
+                <h4 class="entrega-item-title">Capacitación al personal</h4>
+                <p class="entrega-item-desc">Sesiones de entrenamiento para los administradores del sistema.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: ¿Por qué Scrum? -->
+        <div>
+          <h3 class="board-arch-title">¿Por qué Scrum?</h3>
+          <p class="why-scrum-desc">
+            La metodología Scrum permite que QuePaHoy se desarrolle de forma <strong class="text-text">iterativa, incremental y adaptable</strong>, entregando funcionalidades de valor real desde los primeros Sprints.
+          </p>
+          
+          <div class="why-scrum-features">
+            <!-- Iterativo -->
+            <div class="why-scrum-card">
+              <h4 class="why-scrum-card-title">Iterativo</h4>
+              <p class="why-scrum-card-desc">Mejoras continuas en cada ciclo</p>
+            </div>
+            <!-- Incremental -->
+            <div class="why-scrum-card">
+              <h4 class="why-scrum-card-title">Incremental</h4>
+              <p class="why-scrum-card-desc">Valor entregado desde el Sprint 1</p>
+            </div>
+            <!-- Adaptable -->
+            <div class="why-scrum-card full">
+              <h4 class="why-scrum-card-title">Adaptable</h4>
+              <p class="why-scrum-card-desc">Responde rápido al cambio</p>
+            </div>
+          </div>
+          
+          <p class="entrega-item-desc">
+            Con Scrum, QuePaHoy no es solo un sistema de gestión — es un producto que evoluciona junto con las necesidades reales de sus usuarios.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== JS ===================== -->
+  <script src="index.js"></script>
+</body>
+</html>
